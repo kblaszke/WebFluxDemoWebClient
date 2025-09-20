@@ -1,0 +1,37 @@
+<div id="container">
+    <div id="header">
+        <h1>Welcome to {{ title }}!</h1>
+    </div>
+    <div id="contentcontainer">
+        <div id="content">
+            <div class="post">
+                <h2>Server request</h2>
+                <div class="entry">
+                    <form [formGroup]="form" (ngSubmit)="submit()">
+                        <label>
+                            <input type="text" formControlName="urlPath"/>
+                        </label>
+                        <br/>
+                        <button type="submit" [disabled]="form.invalid">Submit</button>
+                    </form>
+                </div>
+                <p class="metadata"> GET http://localhost:8080/eventsWww</p>
+            </div>
+
+            <div class="post">
+                <h2>Odebrane wiadomości:</h2>
+                <div class="entry">
+                    <div *ngFor="let msg of messages()">
+                        <p>{{ msg }}</p>
+                    </div>
+
+                    <div id="messages"></div>
+                </div>
+                <p class="metadata">www-content Event Listener </p>
+            </div>
+
+            <router-outlet/>
+        </div>
+    </div>
+    <div id="footer"></div>
+</div>
