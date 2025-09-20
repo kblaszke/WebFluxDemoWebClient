@@ -1,1 +1,374 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: tahoma, verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	background: #efe7e1;
+	color: #5e5e5e;
+}
+
+a, a:visited, a:active {
+	font-family: tahoma, verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	color: #9d0a0e;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #9d0a0e;
+	text-decoration: underline;
+}
+
+p {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 12px;
+}
+
+img {
+	padding: 0;
+	border: 0px;
+}
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+#container {
+	width: 880px;
+	margin: 0 auto;
+}
+
+#header {
+	width: 880px;
+	height: 188px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	background: url('images/header.gif') left top no-repeat;
+	float: left;
+}
+
+#header h1 {
+	letter-spacing: -1px;
+	color: #9d0a0e;
+	font-size: 36px;
+	font-weight: bold;
+	margin: 25px 0px 0px 30px;
+	padding: 0px;
+}
+
+#header h1 a, #header h1 a:visited, #header h1 a:active, #header h1 a:hover {
+	letter-spacing: -1px;
+	color: #9d0a0e;
+	font-size: 36px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#header p {
+	margin-top: 0px;
+	margin-left: 32px;
+	margin-bottom: 0px;
+	padding: 0px;
+	text-align: left;
+	font-size: 12px;
+	color: #5e5e5e;
+}
+
+#topmenu {
+	float: left;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 30px;
+	margin-top: 44px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+#topmenu ul {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+
+#topmenu li {
+	display: inline;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#topmenu li a, #topmenu li a:visited, #topmenu li a:active {
+	display: block;
+	color: #5e5e5e;
+	font-weight: bold;
+	text-decoration: none;
+	float: left;
+	border-top: 1px solid #f4f2f0;
+	border-right: 3px solid #f4f2f0;
+	margin: 0px 3px 0px 0px;
+	padding: 10px 20px 10px 20px;
+}
+
+#topmenu li a:hover {
+	text-decoration: underline;
+	border-top: 1px solid #f4f2f0;
+	border-right: 3px solid #f4f2f0;
+	margin: 0px 3px 0px 0px;
+	padding: 10px 20px 10px 20px;
+	background: #f4f2f0;
+	color: #5e5e5e;
+}
+
+#contentcontainer {
+	clear: both;
+	float: left;
+	width: 880px;
+	background: url('images/contentbg.gif') left top repeat-y;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#content {
+	width: 580px;
+	float: left;
+	display: inline;
+	margin: 15px 25px 25px 30px;
+	padding: 0px;
+
+}
+
+.post {
+	margin: 0px;
+	padding: 0px;
+}
+
+.entry {
+	margin: 18px 0px 0px 0px;
+	padding: 0px;
+}
+
+#content p {
+	line-height: 130%;
+}
+
+#content h2, #content h2 a, #content h2 a:visited, #content h2 a:active {
+	font-size: 22px;
+	text-decoration: none;
+	font-weight: normal;
+	color: #9d0a0e;
+	margin: 0px;
+}
+
+#content h2 a:hover {
+	text-decoration: underline;
+}
+
+#messages p {
+    margin-bottom: 0px;
+}
+
+.posted {
+	font-size: 10px;
+	color: #8e8e8e;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.metadata {
+	text-align: right;
+	padding: 6px 8px 6px 3px;
+	background-color: #f4f2f0;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+.comments {
+	background: url('images/iconcom.gif') no-repeat left center;
+	margin-top: 0px;
+	margin-left: 10px;
+	padding: 1px 0px 4px 19px;
+
+}
+
+blockquote {
+	margin: 15px 30px 15px 10px;
+	padding-left: 15px;
+	border-left: 7px solid #f4f2f0;
+}
+
+#content .postpagesnav {
+	margin: 15px 5px 5px 5px;
+	padding: 0px;
+	}
+
+#content .postpagesnav .older {
+	width:50%;
+	float:left;
+	}
+
+#content .postpagesnav .newer {
+	width: 50%;
+	float: right;
+	text-align:right;
+	}
+
+h3 {
+	margin-top: 20px;
+	color: #5e5e5e;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#commentlist {
+	list-style: none;
+	margin: 0;
+	padding: 0px;
+}
+
+#commentlist li {
+	border-top: 3px solid #f4f2f0;
+	margin: 0px;
+	padding: 14px 11px 10px 11px;
+}
+
+#commentlist li p {
+	margin-top: 12px;
+	margin-bottom: 6px;
+	line-height: 130%;
+}
+
+#writecomment {
+	background: #f4f2f0;
+	padding: 10px 10px 10px 15px;
+	margin-top: 20px;
+}
+
+#writecomment p {
+	margin: 10px;
+}
+
+form {
+	padding: 0;
+	margin: 0;
+}
+
+#commentform textarea {
+	width: 95%;
+	padding: 2px;
+	border: 1px solid #8e8e8e;
+	}
+
+#commentform input {
+	width: 180px;
+	margin: 0px 7px 0px 0px;
+	border: 1px solid #8e8e8e;
+	}
+
+#commentform #submit {
+	background-color: #ffffff;
+	border: 1px solid #8e8e8e;
+	color: #5e5e5e;
+	}
+
+
+#sidebar {
+	width: 220px;
+	margin: 0px 0px 0px 0px;
+	float: left;
+
+}
+#sidebar h2 {
+	color: #5e5e5e;
+	padding: 4px 8px 4px 10px;
+	font-size: 14px;
+	background: #f4f2f0;
+	font-weight: normal;
+	margin-bottom: 0px;
+
+}
+
+#sidebar ul {
+	list-style: none;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#sidebar li {
+	margin-left: 0px;
+	margin-bottom: 3px;
+}
+
+#sidebar ul li ul {
+	list-style: none;
+	margin-top: 12px;
+	margin-bottom: 18px;
+	margin-left: 5px;
+	padding-right: 0px;
+}
+
+#sidebar ul li ul li {
+	background: url('images/link.gif') no-repeat left center;
+	margin-left: 0px;
+	padding-bottom: 2px;
+	padding-left: 16px;
+}
+
+#searchform {
+	margin-top: 12px;
+	margin-left: 5px;
+	padding-left: 10px;
+	margin-bottom: 18px;
+}
+
+#searchfield {
+	border: 1px solid #8e8e8e;
+	color: #5e5e5e;
+	width: 150px;
+	padding: 1px;
+	margin: 1px;
+	height: 18px;
+}
+
+
+#footer {
+	clear: both;
+	float: left;
+	text-align: center;
+	width: 880px;
+	background: url('images/footer.gif') left top no-repeat;
+
+	margin: 0px 0px 0px 0px;
+	padding: 35px 0px 0px 0px;
+}
+
+#footer p {
+	color: #8e8e8e;
+}
+
+#footer a, #footer a:visited, #footer a:active, #footer a:hover {
+	font-family: tahoma, verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	color: #8e8e8e;
+	text-decoration: underline;
+	background: none;
+}
